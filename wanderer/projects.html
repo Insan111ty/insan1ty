@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wanderer | Projects</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="images/title.jpg" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Styles -->
+        <link rel="stylesheet" href="style/general-style.css">
+        <link rel="stylesheet" href="style/projects-style.css">
+        <!-- Scripts -->
+        <script src="js/all-script-preloader.js"></script>
+        <!-- Fonts -->
+        <link rel="preload" href="fonts/Founder/Founder-Medium.otf" as="font">
+        <link rel="preload" href="fonts/Poppins/Poppins-Regular.ttf" as="font">
+        <link rel="preload" href="fonts/Montserrat/Montserrat-Bold.ttf" as="font">
+        <link rel="preload" href="fonts/BlenderPro/BlenderPro-Medium.ttf" as="font">
+        <link rel="preload" href="fonts/SF Pro Display/SF-Pro-Display-Bold.otf" as="font">
+        <link rel="preload" href="fonts/SF Pro Display/SF-Pro-Display-Regular.otf" as="font">
+        <!-- Icons -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+
+        <div class="preloader">
+            <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            </div>
+        </div>
+
+        <header>
+            <div onclick="location.href='index.html';" class="nav">
+                <div class="main_wanderer" id="a">
+                    <img src="images/logo_long_new.png" width="200">
+                </div>
+            </div>
+                <div onclick="location.href='profile.html';" id="a">Profile</div>
+                <div onclick="location.href='documents.html';"id="a">Legal Information</div>
+                <div onclick="location.href='social-links.html';" id="a">Social Nets</div>
+                <div onclick="location.href='projects.html';" class="current_tab" id="a">Projects</div>
+                <div onclick="location.href='devblog.html';" id="a">DevBlog</div>
+        </header>    
+        
+        <div class="main_image" width="100%">
+            <img src="images/projects.png" width="75%">
+            <div class="main_description">Здесь ты можешь ознакомиться со всеми проектами Wanderer'а</div>
+        </div>
+
+        <div class="projects">
+            <div class="title">Проекты</div>
+            <div class="project_1" id="row1">
+                <h3>Wanderer Telegram Bot</h3>
+                <img src="images/wtgbot.jpg" width="80%" style="margin-top: 1%;">
+                <h5 style="margin-top: 1%;">Multitasking telegram bot made by Wanderer.<br>Click to know more.</h5>
+            </div>
+            <div class="project_2" id="row1">
+                <h3>Codeverse</h3>
+                <img src="images/codeverse.jpg" width="80%" style="margin-top: 1%;">
+                <h5 style="margin-top: 1%;">Special service for programmers.<br>Click to know more.</h5>
+            </div>
+            <div class="project_3" id="row1">
+                <h3>Trapped</h3>
+                <img src="images/trapped_title.jpg" width="80%" style="margin-top: 1%;">
+                <h5 style="margin-top: 1%;">New horror game made by Wanderer.<br>Click to know more.</h5>
+            </div>
+        </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Wanderer</h4>
+                    <ul>
+                        <li><a href="devblog.html">DevBlog</a></li>
+                        <li><a href="social-links.html">Social Nets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Projects</h4>
+                    <ul>
+                        <li><a href="codeverse.html">Codeverse</a></li>
+                        <li><a href="trapped.html">Trapped</a></li>
+                        <li><a href="telegram-bot.html">Telegram Bot</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FAQ</h4>
+                    <ul>
+                        <li><a href="index.html">About Wanderer</a></li>
+                        <li><a href="documents.html">Documents</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow me</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                        <a href="#"><i class="fab fa-steam"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" id="d">
+                    <ul>
+                        <li><a href="#">© 2024 Wanderer. All right reserved.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script src="js/projects-script-cards.js"></script>
+        <script type="text/javascript">VanillaTilt.init(document.querySelectorAll(".project_1"));</script>
+        <script type="text/javascript">VanillaTilt.init(document.querySelectorAll(".project_2"));</script>
+        <script type="text/javascript">VanillaTilt.init(document.querySelectorAll(".project_3"));</script>
+    </body>
+</html>

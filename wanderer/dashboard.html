@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Wanderer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="style/general-style.css">
+    <link rel="stylesheet" media="screen" href="style/dashboard-style.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+        </div>
+    </div>
+    <header>
+        <!-- pink - 247, 120, 186 -->
+
+        <div onclick="location.href='index.html';" class="nav">
+            <div class="main_wanderer" id="a">
+                <img src="images/logo_long_new_dark.png" width="200">
+            </div>
+          </div>
+            <div onclick="location.href='profile.html';" id="a">Admin</div>
+            <div onclick="location.href='all_statistic.html';"id="a">All Statistic</div>
+            <div onclick="location.href='users_manager.html';"id="a">Users Manager</div>
+            <div onclick="location.href='chapters_manager.html';" id="a">Chapters Manager</div>
+            <div onclick="location.href='media_manager.html';" id="a">Media Manager</div>
+            <div onclick="location.href='note_manager.html';" id="a">Notes Manager</div>
+            <div onclick="location.href='add_note.html';" id="a" style="color: rgb(210, 157, 24);">+ New Note</div>
+    </header>
+
+    <div class="site_image">
+        <img src="images/site_image.jpg" width="90%">
+    </div>
+
+    <div class="stats">
+        Статистика сайта <span class="all_statistic" onclick="location.href='all_statistic.html';">→ Подробнее</span>
+    </div>
+
+    <div class="visits">
+        <div class="content">
+            <p class="title">Количество посещений</p>
+            <p class="number">1.000.000</p>
+            <p class="more">→ Подробнее</p>
+        </div>
+    </div>
+
+    <div class="users">
+        <div class="content">
+            <p class="title">Количество зарегистрированных пользователей</p>
+            <p class="number">60.000</p>
+            <p class="more">→ Подробнее</p>
+        </div>
+    </div>
+
+    <div class="notes">
+        <div class="content">
+            <p class="title">Количество записей</p>
+            <p class="number">21</p>
+            <p class="more">→ Подробнее</p>
+        </div>
+    </div>
+
+    <script src="js/all-script-preloader.js"></script>
+</body>
+</html>
