@@ -5,6 +5,7 @@
   src:url(../fonts/SpaceMono-Regular.ttf);
   font-display:swap
 }
+
 @-webkit-keyframes fadeIn {
   0% {
   opacity:0
@@ -64,6 +65,7 @@ body::-webkit-scrollbar-thumb {
 body {
     margin: 0;
     padding: 0;
+    color:#b3b7bb;
     background-color: rgb(13, 13, 13);
 }
 
@@ -75,10 +77,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .topography video {
+  z-index: -100;
     position: absolute;
     top: 0;
     left: 0;
@@ -88,30 +94,21 @@ body {
     object-fit: cover;
 }
 
-.center {
-    position: absolute;
-    top:  50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-}
-
 .name {
-    color: #ced4da;
-    font-family: 'Cascadia Code';
+    font-family: 'j';
     font-size: 200%;
 }
-.lnk {
-    text-decoration:none;
-    color: #ced4da;
-    transition:.6s ease-in-out
-  }
-  .lnk:hover {
-    color:#b3b7bb;
-  }
+
+
   a {
+    color:#b3b7bb;
+    transition:.6s ease-in-out;
     margin:0 10px 0 10px;
     text-decoration:none
+  }
+
+  a:hover {
+    color:#b07440;
   }
 
   .g {
@@ -132,6 +129,44 @@ body {
     transition:.3s ease-in
   }
   .fa-brands:hover {
-    color:#814845c0;
+    color:#b07440;
   }
 
+  
+  * {
+      font-family: "j";
+      margin: 0;
+  }
+  html {
+      scroll-behavior: smooth;
+  }
+
+  a {
+      margin: 0 10px 0 10px;
+      text-decoration: none;
+  }
+
+  body {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+  }
+  .g {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 80vh;
+  }
+
+  
+  i {
+      font-style: normal;
+      font-size: 24px;
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+  }
+
+.entrypoint {
+  font-weight: 400;
+}
