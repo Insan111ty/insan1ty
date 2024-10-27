@@ -1,0 +1,236 @@
+html {
+    background-color: rgb(233, 234, 236);
+}
+
+html, body { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #eeeeee;
+    z-index: 1001;
+  }
+
+.loaded_hiding .preloader {
+    transition: 1.5s opacity;
+    opacity: 0;
+}
+  
+.loaded .preloader {
+    display: none;
+}
+
+header {
+    top: 0;
+    opacity: 1;
+    padding-right: 2%;
+    position: absolute;
+    width: 100%;
+    height: 8%;
+}
+  
+#a {
+    font-family: 'Founder';
+    margin-top: 1.5%;
+    font-weight: 400;
+    font-size: 120%;
+    color: rgb(27, 27, 27);
+    float: right;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: opacity 0.3s;
+}
+  
+#a:hover {
+    opacity: 0.7;
+}
+  
+#a:nth-last-child(7) {
+    vertical-align: middle;
+    text-align: center;
+    width: 12vh;
+    border: rgb(27, 27, 27) 2px solid;
+    border-radius: 35px;
+    padding-top: 1px;
+    margin-top: 1.4%;
+}
+
+.main_wanderer {
+    float: left !important;
+    margin-left: 2%;
+    margin-top: 1% !important;
+}
+  
+.main_wanderer img {
+    width: 100%;
+    height: auto;
+    margin: 2px;
+    max-width: 220px;
+}
+  
+a {
+    color: rgb(44, 132, 255);
+    text-decoration: none;
+}
+    
+a:visited {
+    color: rgb(44, 132, 255);
+    text-decoration: none;
+}
+
+.site_image {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.site_image img:hover {
+    transform: scale(101%);
+}
+
+.site_image img {
+    border-radius: 35px;
+    transition: all 0.4s;
+}
+
+.stats {
+    font-family: "Roboto Condensed";
+    color: rgb(15, 15, 15);
+    margin-left: 5%;
+    font-size: 200%;
+    margin-top: 1%;
+}
+
+.all_statistic {
+    font-size: 60%;
+    vertical-align: middle;
+    color: rgb(210, 157, 24);
+    transition: color .3s;
+    cursor: pointer;
+}
+
+.all_statistic:hover {
+    color: rgb(160, 119, 15);
+}
+
+.visits {
+    background-color: rgb(232, 232, 232);
+    border: 2px solid rgb(255, 199, 58);
+    font-family: "Roboto Condensed";
+    color: rgb(15, 15, 15);
+    transition: all 0.6s;
+    border-radius: 20px;
+    margin-top: 1%;
+    font-size: 170%;
+    margin-left: 5%;
+    float: left;
+    width: 30%;
+    height: 21%;
+}
+
+.visits:hover {
+    transform: scale(103%);
+}
+
+.content {
+    position: relative;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.visits > .content > .number {
+    font-family: "BlenderPro-Bold";
+    font-size: 120%;
+}
+
+.visits > .content > .more {
+    transition: color .4s;
+    cursor: pointer;
+    font-size: 85%;
+}
+
+.visits > .content > .more:hover {
+    color: rgb(210, 157, 24);
+}
+
+.users {
+    background-color: rgb(232, 232, 232);
+    border: 2px solid rgb(255, 199, 58);
+    font-family: "Roboto Condensed";
+    color: rgb(15, 15, 15);
+    transition: all 0.6s;
+    border-radius: 20px;
+    margin-top: 1%;
+    font-size: 160%;
+    margin-left: 3%;
+    float: left;
+    width: 30%;
+    height: 21%;                    
+}
+
+.users:hover {
+    transform: scale(103%);
+}
+
+.users > .content > .number {
+    font-family: "BlenderPro-Bold";
+    font-size: 120%;
+}
+
+.users > .content > .more {
+    transition: color .4s;
+    cursor: pointer;
+    font-size: 85%;
+}
+
+.users > .content > .more:hover {
+    color: rgb(210, 157, 24);
+}
+
+.notes {
+    background-color: rgb(232, 232, 232);
+    border: 2px solid rgb(255, 199, 58);
+    font-family: "Roboto Condensed";
+    color: rgb(15, 15, 15);
+    transition: all 0.6s;
+    border-radius: 20px;
+    margin-top: 1%;
+    font-size: 160%;
+    margin-left: 3%;
+    float: left;
+    width: 24%;
+    height: 21%;                    
+}
+
+.notes:hover {
+    transform: scale(103%);
+}
+
+.notes > .content > .number {
+    font-family: "BlenderPro-Bold";
+    font-size: 120%;
+}
+
+.notes > .content > .more {
+    transition: color .4s;
+    cursor: pointer;
+    font-size: 85%;
+}
+
+.notes > .content > .more:hover {
+    color: rgb(210, 157, 24);
+}
