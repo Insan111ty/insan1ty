@@ -81,6 +81,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    transition: all .4s;
 }
 
 .topography video {
@@ -169,4 +170,12 @@ body {
 
 .entrypoint {
   font-weight: 400;
+}
+
+#Div1, #footer {
+  transition: all .4s;
+}
+
+.lnk {
+  cursor: pointer;
 }
