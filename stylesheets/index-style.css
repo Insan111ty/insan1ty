@@ -179,3 +179,12 @@ body {
 .lnk {
   cursor: pointer;
 }
+
+.about {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: all .8s;
+}
