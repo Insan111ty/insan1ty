@@ -24,7 +24,7 @@ to {
 
 html {
     scroll-behavior: smooth;
-    pointer-events: all;
+
 }
 
 .preloader {
@@ -40,6 +40,37 @@ html {
 .loaded_hiding .preloader {
     transition: 2s opacity;
     opacity: 0;
+}
+
+.img {
+    position: absolute;
+    margin: 0;
+}
+
+.bot {
+    opacity: 50%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+}
+
+.bot img {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
   
 .loaded .preloader {
@@ -67,11 +98,12 @@ body {
     margin: 0;
     padding: 0;
     color:#b3b7bb;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(16, 16, 16);
+
 }
 
 .topography {
-    opacity: 30%;
+    opacity: 60%;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -128,14 +160,13 @@ body {
   }
   .fa-brands {
     color:#b3b7bb;
-    transition:.3s ease-in;
-    
+    transition:.3s ease-in
   }
   .fa-brands:hover {
     color:#b07440;
-    
   }
 
+  
   * {
       font-family: "j";
       margin: 0;
@@ -189,6 +220,4 @@ body {
   transform: translate(-50%,-50%);
   opacity: 0;
   transition: all .8s;
-  z-index: -1;
-  text-align: justify;
 }

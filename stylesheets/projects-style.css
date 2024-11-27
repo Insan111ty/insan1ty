@@ -192,3 +192,8 @@ body {
   z-index: -1;
   text-align: justify;
 }
+
+.project1 {
+  width: 100%;
+  background-color: #ffffff;
+}
