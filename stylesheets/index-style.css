@@ -1,5 +1,5 @@
 @import url(variables.css);
-  @font-face {
+@font-face {
   font-family:'j';
   font-weight:400;
   src:url(../fonts/SpaceMono-Regular.ttf);
