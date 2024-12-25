@@ -11,6 +11,9 @@ function switchVisible() {
         document.getElementById("footer").style.userSelect = "none";
         document.getElementById("abouter").textContent="< Return";
         document.querySelector(".topography").style.opacity = 0.17;
+
+        document.querySelector(".b-page_newyear").style.opacity = 0;
+        document.querySelector(".b-page_newyear").style.userSelect = "none";
     } else {
 
         document.getElementById("Div1").style.opacity  = 1;
@@ -24,6 +27,9 @@ function switchVisible() {
         document.getElementById("footer").style.userSelect = "auto";
         document.getElementById("abouter").textContent="About me";
         document.querySelector(".topography").style.opacity = 0.3
+
+        document.querySelector(".b-page_newyear").style.opacity = 0.8;
+        document.querySelector(".b-page_newyear").style.userSelect = "auto";
     }
 
 

@@ -1,7 +1,7 @@
-.b-page__content{min-height:200px; position:fixed; top:0; z-index:999999999999;}
-.b-head-decor{display:none; position:fixed; top:0; z-index:999999999999;}
+.b-page__content{min-height:200px; position:fixed; top:0; z-index:-1;}
+.b-head-decor{display:none; position:fixed; top:0; z-index:-1;}
 .b-page_newyear .b-head-decor{
-   z-index:999999999999;
+   z-index:-1;
    position:fixed;
    top:0;
    left:0;
