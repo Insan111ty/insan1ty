@@ -1,4 +1,4 @@
-.b-page__content{min-height:200px; position:fixed; top:0; z-index:-1;}
+.b-page__content{min-height:100px; position:fixed; top:0; z-index:-1;}
 .b-head-decor{display:none; position:fixed; top:0; z-index:-1;}
 .b-page_newyear .b-head-decor{
    z-index:-1;
@@ -6,10 +6,10 @@
    top:0;
    left:0;
    display:block;
-   height:115px;
+   height:90px;
    width:100%;
-   overflow:hidden;
-   background:url(../balls/b-head-decor_newyear.png) repeat-x 0 0
+   overflow: hidden;
+   background:url(../balls/b-head-decor_newyear.png) repeat-x 0 0;
 }
 .b-page_newyear .b-head-decor__inner{position:absolute;top:0;left:0;height:115px;display:block;width:373px}
 .b-page_newyear .b-head-decor::before{content:'';display:block;position:absolute;top:-115px;left:0;z-index:3;height:115px;display:block;width:100%;box-shadow:0 15px 30px rgba(0,0,0,0.75)}
@@ -78,3 +78,6 @@ pointer-events:none
 .b-ball_bounce .b-ball__right.bounce3+.b-ball__i{-webkit-transform:rotate(-1.5deg);-moz-transform:rotate(-1.5deg);-o-transform:rotate(-1.5deg);transform:rotate(-1.5deg)}
 
 
+.b-page_newyear {
+   transition: all .4s;
+}
