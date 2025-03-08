@@ -1,0 +1,136 @@
+@font-face {
+    font-family:'j';
+    font-weight:400;
+    src:url(../fonts/SpaceMono-Regular.ttf);
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    font-weight: 200;
+    font-style: normal;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Mono';
+    font-weight: 200;
+    font-style: normal;
+    src: url('../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+    pointer-events: all;
+    color: #b3b7bb;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    --dot-bg: black;
+    --dot-color: white;
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+}
+
+* {
+    font-family: "j";
+    margin: 0;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #010101;
+    z-index: 1001;
+}
+
+.loaded_hiding .preloader {
+    transition: 2s opacity;
+    opacity: 0;
+}
+  
+.loaded .preloader {
+    display: none;
+}
+  
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+  
+body::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: rgb(92, 92, 92);
+    border-radius: 20px;
+    border: 3px solid rgb(92, 92, 92);
+}
+
+::selection {
+    background-color: rgba(78, 79, 80, 0.605);
+    color: rgb(26, 26, 26);
+}
+
+a {
+    color:#b3b7bb;
+    transition:.6s ease-in-out;
+    margin:0 10px 0 10px;
+    text-decoration:none
+}
+
+a:hover {
+    color: chocolate;
+}
+
+.entrypoint {
+    text-align: center;
+    font-weight: 400;
+}
+
+.introduction {
+    display: flex;
+    padding: 30px 10%; 
+    flex-wrap: nowrap;
+}
+
+.big_text {
+    font-family: 'Poppins-Bold';
+    font-size: 10vw;
+    color: white;
+    margin-top: 10%;
+    padding: 30px 10%;
+}
+
+.make_him_suffer {
+    margin-top: -15%;
+    padding: 30px 10%;
+    font-size: 2vw;
+    min-width: 220px;
+    font-family: "Ubuntu-Mono";
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction img {
+    height: auto;
+    width: 30%;
+    padding: 30px 10%;
+    min-width: 30%;
+}
+
+.description {
+    margin-top: 5%;
+    padding: 30px 10%;
+    font-family: "Ubuntu-Mono";
+}

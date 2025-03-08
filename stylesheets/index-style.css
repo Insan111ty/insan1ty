@@ -1,5 +1,5 @@
 @import url(variables.css);
-@font-face {
+  @font-face {
   font-family:'j';
   font-weight:400;
   src:url(../fonts/SpaceMono-Regular.ttf);
@@ -64,7 +64,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-    
     margin: 0;
     padding: 0;
     color:#b3b7bb;
@@ -72,7 +71,7 @@ body {
 }
 
 .topography {
-    opacity: 45%;
+    opacity: 30%;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -87,7 +86,7 @@ body {
 }
 
 .topography video {
-    z-index: -100;
+  z-index: -100;
     position: absolute;
     top: 0;
     left: 0;
@@ -102,78 +101,75 @@ body {
     font-size: 200%;
 }
 
-a {
+  a {
     color:#b3b7bb;
     transition:.6s ease-in-out;
     margin:0 10px 0 10px;
     text-decoration:none
-}
+  }
 
-a:hover {
+  a:hover {
     color:#b07440;
-}
+  }
 
-.g {
+  .g {
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
     height:80vh
-}
-
-i {
+  }
+  i {
     font-style:normal;
     font-size:24px;
     padding-left:.2rem;
     padding-right:.2rem
-}
-
-.fa-brands {
+  }
+  .fa-brands {
     color:#b3b7bb;
     transition:.3s ease-in;
-  
-}
-
-.fa-brands:hover {
+    
+  }
+  .fa-brands:hover {
     color:#b07440;
-}
+    
+  }
 
-* {
-    font-family: "j";
-    margin: 0;
-}
+  * {
+      font-family: "j";
+      margin: 0;
+  }
+  html {
+      scroll-behavior: smooth;
+  }
 
-html {
-    scroll-behavior: smooth;
-}
+  a {
+      margin: 0 10px 0 10px;
+      text-decoration: none;
+  }
 
-a {
-    margin: 0 10px 0 10px;
-    text-decoration: none;
-}
+  body {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+  }
+  .g {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 80vh;
+  }
 
-body {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-}
-.g {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 80vh;
-}
-
-i {
-    font-style: normal;
-    font-size: 24px;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-}
+  
+  i {
+      font-style: normal;
+      font-size: 24px;
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+  }
 
 .entrypoint {
-  z-index: 10001;
   font-weight: 400;
 }
 

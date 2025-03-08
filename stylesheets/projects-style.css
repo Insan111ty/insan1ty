@@ -6,6 +6,20 @@
   font-display:swap
 }
 
+#block {
+    width: 50%;
+    height: 10%;
+    color: #fff;
+    font-size: 150%;
+    background-color: rgba(17, 17, 18, 0.592);
+    border: rgb(157, 161, 170) 1px solid;
+    border-radius: 25px;
+    padding: 30px;
+    cursor: pointer;
+    font-family: 'j'; 
+}
+
+
 @-webkit-keyframes fadeIn {
   0% {
   opacity:0
@@ -191,9 +205,4 @@ body {
   transition: all .8s;
   z-index: -1;
   text-align: justify;
-}
-
-.project1 {
-  width: 100%;
-  background-color: #ffffff;
 }
